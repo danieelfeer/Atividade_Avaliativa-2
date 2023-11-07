@@ -13,6 +13,7 @@ int main() {
             printf(" ");
         }
     }
+    
     printf("\n");
 
     while(tamanhoVetor > 1){

@@ -38,7 +38,7 @@ int main(){
             if(string[i] == 'G'){
                 forcaG = 8*overall;
             } else if(string[i] == 'L'){
-                forcaL = forcaL + overall
+                forcaL = forcaL + overall;
             }
         }   
 

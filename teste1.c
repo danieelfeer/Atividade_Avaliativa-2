@@ -7,7 +7,9 @@ int main(){
     //Time
     char time[40];
     fgets(time, 40, stdin);
-
+    
+    time[strlen(time) - 1] = '\0';
+    
     //String
     char string[40];
     
@@ -33,7 +35,7 @@ int main(){
         numero[2] = '\0';  
 
         overall = atoi(numero);
-
+        printf("%d\n", overall);
         if(string[tamanhoString - 5] == 'G'){
             forcaG += overall;
         } else if(string[tamanhoString - 5] == 'L'){
@@ -51,7 +53,7 @@ int main(){
 
     double mediaF;
 
-    mediaF = (8*(forcaG) + 10*(forcaL) + 5*(forcaZ) + 8*(forcaV) + 11*(forcaM) + 12*(forcaA))/100;
+    mediaF = (8*(forcaG) + 10*(forcaL) + 5*(forcaZ) + 8*(forcaV) + 11*(forcaM) + 12*(forcaA))/100.0;
     
     printf("%s: %.2lf de forca\n", time, mediaF);    
 
